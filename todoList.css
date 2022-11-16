@@ -19,11 +19,14 @@ header{
   justify-content: space-between;
 }
 header p{
+  color: #222222;
   font-size: 2.2rem;
   font-weight: 700;
   text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.25);
 }
+/****************************/
 main .todoTitle p{
+  color: #393939;
   font-size: 2rem;
   font-weight: 600;
   text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.25);
@@ -31,9 +34,10 @@ main .todoTitle p{
   margin-bottom: 1rem;
 }
 main .todo{
+  position: relative;
   margin-top: 0.7rem;
   width: 100%;
-  height: 47px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   border-radius: 20px;
@@ -43,17 +47,71 @@ main .todo{
 main .todo p{
   font-size: 1.3rem;
   font-weight: 600;
-  line-height: 44.2px;
+  line-height: 47px;
+  color: #393939;
+}
+main .todo:nth-child(even) {
+  background: #EEF4F8;
 }
 main .todo .checkBox i {
-  font-size: 1.2rem;
-  line-height: 47px;
-  margin: 0px 17px 0px 19px;
+  font-size: 1.3rem;
+  line-height: 50px;
+  margin: 0px 17px 0px 25px;
   text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.25);
 }
 main .todo .removeButton i{
-  font-size: 1.2rem;
-  line-height: 47px;
-  margin-left: 315px;
+  font-size: 1.3rem;
+  line-height: 50px;
+  margin-left: 300px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+main .addBox{
+  margin-top: 0.7rem;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background: #F7FBFD;
+  box-shadow: inset 3px 3px 4px #C6C9CA, inset -3px -3px 5px #FFFFFF;
+}
+main .addBox i{
+  font-size: 1.3rem;
+  line-height: 50px;
+  margin: 0px 17px 0px 25px;
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.25);
+}
+/****************************/
+footer{
+  margin: 50px auto;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .circle{
+width: 60px;
+height: 60px;
+border: 0px solid #222;
+background-color: #FFFFFF;
+border-radius: 50%;
+box-shadow: 3px 3px 3px rgba(179, 183, 186, 0.82), 
+inset 3px 3px 3px rgba(215, 215, 215, 0.82);
+}
+footer .icon {
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer .icon img{
+width: 65%;
+}
+footer .icon i{
+font-size: 1.8rem;
+color: #5A5A5A;
+text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
